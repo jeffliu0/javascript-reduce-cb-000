@@ -9,6 +9,7 @@ const products = [
 
 const reducer = (acc, product) => {
   acc + (product.price * product.discount)
+  console.log(acc)
 }
 
 const reduced = products.reduce(reducer, 0)
